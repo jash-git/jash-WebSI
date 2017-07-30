@@ -1,0 +1,5 @@
+[Sun Jul 30 11:09:18.811520 2017] [mpm_winnt:notice] [pid 13516:tid 652] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Sun Jul 30 11:09:18.811520 2017] [mpm_winnt:notice] [pid 13516:tid 652] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Sun Jul 30 11:09:18.811520 2017] [core:notice] [pid 13516:tid 652] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
+[Sun Jul 30 11:09:18.811520 2017] [mpm_winnt:notice] [pid 13516:tid 652] AH00418: Parent: Created child process 6200
+[Sun Jul 30 11:09:19.366206 2017] [mpm_winnt:notice] [pid 6200:tid 656] AH00354: Child: Starting 64 worker threads.

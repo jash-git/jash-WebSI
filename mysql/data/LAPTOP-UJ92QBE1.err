@@ -1,0 +1,47 @@
+2017-07-30 11:09:06 15472 [Note] Plugin 'FEDERATED' is disabled.
+2017-07-30 11:09:06 15472 [Note] InnoDB: The InnoDB memory heap is disabled
+2017-07-30 11:09:06 15472 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2017-07-30 11:09:06 15472 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-07-30 11:09:06 15472 [Note] InnoDB: Not using CPU crc32 instructions
+2017-07-30 11:09:06 15472 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2017-07-30 11:09:06 15472 [Note] InnoDB: Completed initialization of buffer pool
+2017-07-30 11:09:06 15472 [Note] InnoDB: Setting log file C:\Users\jash\Desktop\jash-WebSI\mysql\data\ib_logfile101 size to 5 MB
+2017-07-30 11:09:06 15472 [Note] InnoDB: Setting log file C:\Users\jash\Desktop\jash-WebSI\mysql\data\ib_logfile1 size to 5 MB
+2017-07-30 11:09:06 15472 [Note] InnoDB: Renaming log file C:\Users\jash\Desktop\jash-WebSI\mysql\data\ib_logfile101 to C:\Users\jash\Desktop\jash-WebSI\mysql\data\ib_logfile0
+2017-07-30 11:09:06 15472 [Warning] InnoDB: New log files created, LSN=1626134
+2017-07-30 11:09:06 15472 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-07-30 11:09:06 15472 [Note] InnoDB: 128 rollback segment(s) are active.
+2017-07-30 11:09:06 15472 [Note] InnoDB: Waiting for purge to start
+2017-07-30 11:09:06 15472 [Note] InnoDB: 5.6.13 started; log sequence number 1626636
+2017-07-30 11:09:06 15472 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 72f180b6-74d4-11e7-9205-54ab3a1bed9d.
+2017-07-30 11:09:06 15472 [Note] Server hostname (bind-address): '*'; port: 3307
+2017-07-30 11:09:06 15472 [Note] IPv6 is available.
+2017-07-30 11:09:06 15472 [Note]   - '::' resolves to '::';
+2017-07-30 11:09:06 15472 [Note] Server socket created on IP: '::'.
+2017-07-30 11:09:07 15472 [Note] Event Scheduler: Loaded 0 events
+2017-07-30 11:09:07 15472 [Note] C:\Users\jash\Desktop\jash-WebSI/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.6.13'  socket: ''  port: 3307  MySQL Community Server (GPL)
+2017-07-30 11:09:18 13408 [Note] Plugin 'FEDERATED' is disabled.
+2017-07-30 11:09:18 13408 [Note] InnoDB: The InnoDB memory heap is disabled
+2017-07-30 11:09:18 13408 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2017-07-30 11:09:18 13408 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-07-30 11:09:18 13408 [Note] InnoDB: Not using CPU crc32 instructions
+2017-07-30 11:09:18 13408 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2017-07-30 11:09:18 13408 [Note] InnoDB: Completed initialization of buffer pool
+2017-07-30 11:09:18 13408 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-07-30 11:09:18 13408 [Note] InnoDB: The log sequence numbers 1626134 and 1626134 in ibdata files do not match the log sequence number 1626646 in the ib_logfiles!
+2017-07-30 11:09:18 13408 [Note] InnoDB: Database was not shutdown normally!
+2017-07-30 11:09:18 13408 [Note] InnoDB: Starting crash recovery.
+2017-07-30 11:09:18 13408 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2017-07-30 11:09:18 13408 [Note] InnoDB: Restoring possible half-written data pages 
+2017-07-30 11:09:18 13408 [Note] InnoDB: from the doublewrite buffer...
+2017-07-30 11:09:19 13408 [Note] InnoDB: 128 rollback segment(s) are active.
+2017-07-30 11:09:19 13408 [Note] InnoDB: Waiting for purge to start
+2017-07-30 11:09:19 13408 [Note] InnoDB: 5.6.13 started; log sequence number 1626646
+2017-07-30 11:09:19 13408 [Note] Server hostname (bind-address): '*'; port: 3307
+2017-07-30 11:09:19 13408 [Note] IPv6 is available.
+2017-07-30 11:09:19 13408 [Note]   - '::' resolves to '::';
+2017-07-30 11:09:19 13408 [Note] Server socket created on IP: '::'.
+2017-07-30 11:09:19 13408 [Note] Event Scheduler: Loaded 0 events
+2017-07-30 11:09:19 13408 [Note] C:\Users\jash\Desktop\jash-WebSI/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.6.13'  socket: ''  port: 3307  MySQL Community Server (GPL)
