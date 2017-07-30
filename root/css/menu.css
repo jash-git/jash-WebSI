@@ -1,0 +1,12 @@
+﻿#nav{margin:10px;text-align:center;line-height:25px;width:200px;font-size:18px;}
+li{
+/*去除前面的黑點*/
+	list-style:none;
+}
+#wrapper #nav li a{
+	/*指定所有左側選單超連結顏色*/
+	color: #0000FF;
+}
+.title{background:#336699;color:#fff;border-bottom:1px solid #fff;cursor:pointer;font-size:18px;}
+.title1{background:#888;color:#000;border-bottom:1px solid #666;cursor:pointer;font-size:18px;}
+.content li{color:#336699;background:#ddd;border-bottom:1px solid #fff;font-size:18px;}
