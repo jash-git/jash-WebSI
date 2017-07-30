@@ -22,6 +22,12 @@
 		function ShowMenu() {
 			showmenu(1);
 		}
+		function Callparent(page,data)
+		{
+			if(window.parent.document){ //判斷母視窗是否存在
+				window.parent.ChangeMain(page,data);
+			}
+		}		
 		</script>
 		<!--left menu end-->
 	</head>
@@ -33,16 +39,12 @@
 			<tr>
 				<td>
 					<div id="nav">		
-						<div class="title" id="menu1" onclick="showmenu('1') ">首頁功能選單</div>
+						<div class="title" id="menu1" onclick="showmenu('1') ">基本資料功能選單</div>
 							<div id="list1" class="content" style="display:none">
 								 <ul>
-									<li><a href="user_index.php">系統人員管理</a></li>
-									<li><a href="manufacturer-goods_index.php">廠商與貨物管理</a></li>
-									<li><a href="clientele_index.php">客戶管理</a></li>
-									<li><a href="products_index.php">產品管理</a></li>
-									<li><a href="buy_index.php">進/退貨管理</a></li>
-									<li><a href="sales_index.php">出貨管理</a></li>
-									<li><a href="accounts_index.php">每月結算</a></li>
+									<li><a href="javascript:Callparent(11,'a=11');">職稱資料管理</a></li>
+									<li><a href="javascript:Callparent(12,'a=12');">部門資料管理</a></li>
+									<li><a href="javascript:Callparent(13,'a=13');">人員資料管理</a></li>
 								 </ul>
 							</div>	
 					</div>

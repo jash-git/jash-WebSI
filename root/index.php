@@ -2,7 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<!-- InstanceBeginEditable name="doctitle" -->
-		<title>jash 進銷存-首頁</title>
+		<title>jash's Web System</title>
 		<!-- InstanceEndEditable -->
 		<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="css/menu.css" rel="stylesheet" type="text/css" media="screen" />
@@ -25,33 +25,33 @@
 		function ChangeMenu(v1){
 			switch(v1)
 			{
-				case 1:
-					if1.location="left-menu01.html";
+				case 1://base-menu
+					if1.location="./left-menu/base-menu.php";
 					break;
-				case 2:
-					if1.location="left-menu02.html";
-					break;					
+		
 			}
 		}
-		function ChangeMain(v1,v2){
-			var url;
-			switch(v1)
+		function ChangeMain(page,v2){
+			switch(page)
 			{
-				case 1:
-					url="main01.html?"+v2;
+				case 11:
+					if2.location = "../context/context11.php";
+
 					break;
-				case 2:
-					url="main02.html?"+v2;
+				case 12:
+					if2.location = "../context/context12.php";
+					break;
+				case 13:
+					if2.location = "../context/context13.php?"+v2;
 					break;					
 			}
-			if2.location=url;
 		}		
 		</script>
 		<!--left menu end-->
 	</head>
 	<body>
 		<?php
-			echo "php...";
+			//echo "php...";
 		?>
 		<div id="wrapper"><!--ALL start-->
 			<div id="header">
@@ -74,26 +74,9 @@
 							<p>歡迎 OOXX 登錄中</p>
 						</td>
 						<td>
-							<a href="javascript:ChangeMenu(1)">系統人員管理</a>
+							<a href="javascript:ChangeMenu(1)">基本資料管理</a>
 						</td>
-						<td>
-							<a href="javascript:ChangeMenu(2)">廠商與貨物管理</a>
-						</td>
-						<td>
-							<a href="clientele_index.php">客戶管理</a>
-						</td>						
-						<td>
-							<a href="products_index.php">產品管理</a>
-						</td>
-						<td>
-							<a href="buy_index.php">進/退貨管理</a>
-						</td>
-						<td>
-							<a href="sales_index.php">出貨管理</a>
-						</td>
-						<td>
-							<a href="accounts_index.php">每月結算</a>
-						</td>
+
 					</tr>
 				</table>
 			</div><!--navigation-->
@@ -101,11 +84,11 @@
 			<div id="content">
 			
 				<div id="left">
-					<iframe id="if1" name="if1" src="./left-menu/left-menu00.php"></iframe>
+					<iframe id="if1" name="if1" ></iframe>
 				</div><!--content_left end-->
 				
 				<div id="right" align = "center"><!-- 在CSS中有指定高度，所以有透個這個高度值確定身體的長度-->
-					<iframe id="if2" name="if2" src="./context/right-main00.php" align="center"></iframe>
+					<iframe id="if2" name="if2" src="./context/context00.php" align="center"></iframe>
 				</div><!--content_right end-->
 				
 			</div><!--content end-->

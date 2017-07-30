@@ -4,8 +4,8 @@
 		<!-- InstanceBeginEditable name="doctitle" -->
 		<title>left-menu</title>
 		<!-- InstanceEndEditable -->
-		<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="css/menu.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="../css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="../css/menu.css" rel="stylesheet" type="text/css" media="screen" />
 		
 		<!-- InstanceBeginEditable name="head" -->
 		<style type="text/css">
@@ -132,7 +132,7 @@
 		<?php
 		
 		?>	
-		<table border="0" cellpadding="0" cellspacing="0" id="newslist_tab" width="1305px";><!--width="1305px"就是工作區的最大限度從[ #wrapper #content #right  #if2 ]這裡來的 -->
+		<table border="0" cellpadding="0" cellspacing="0" id="newslist_tab" width="1290px";><!--width="1305px"就是工作區的最大限度從[ #wrapper #content #right  #if2 ]這裡來的 -->
 			<tr>
 				<td colspan="3">
 					<h3>功能說明:</h3>
@@ -148,60 +148,12 @@
 			</tr>     
 			<tr>
 				<td>
-					<p>系統人員管理</p>
+					<p>基本資料管理</p>
 				</td>
 				<td>
-					<p>可登錄系統的帳號所有相關功能(新增、修改、查詢)</p>
+					<p>基本資料所有相關功能(新增、修改、查詢)</p>
 				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>廠商與貨物管理</p>
-				</td>
-				<td>
-					<p>廠商與貨物資料相關功能(新增、修改、查詢、刪除)</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>客戶管理</p>
-				</td>
-				<td>
-					<p>客戶資料相關功能(新增、修改、查詢、刪除)</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>產品管理</p>
-				</td>
-				<td>
-					<p>產品資料相關功能(新增、修改、查詢、刪除)</p>
-				</td>
-			</tr>						
-			<tr>
-				<td>
-					<p>進/退貨管理</p>
-				</td>
-				<td>
-					<p>進貨資料相關功能(新增、修改、查詢、刪除)</p>
-				</td>
-			</tr>		
-			<tr>
-				<td>
-					<p>出貨管理</p>
-				</td>
-				<td>
-					<p>出貨資料相關功能(新增、修改、查詢、刪除)</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>每月結算</p>
-				</td>
-				<td>
-					<p>每月結算相關計算</p>
-				</td>
-			</tr>								
+			</tr>							
 		</table>	
 	</body>
 </html>	
