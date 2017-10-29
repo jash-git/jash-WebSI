@@ -120,10 +120,10 @@
 .panel-body {
   background-color: #666;
   color: #fff;
-  font-size: 12px;
+  font-size: 18px;
 }
 .panel-title {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   height: 16px;
@@ -302,7 +302,7 @@
   vertical-align: middle;
 }
 .combo .combo-text {
-  font-size: 12px;
+  font-size: 18px;
   border: 0px;
   line-height: 20px;
   height: 20px;
@@ -351,7 +351,7 @@
 }
 .combobox-item,
 .combobox-group {
-  font-size: 12px;
+  font-size: 18px;
   padding: 3px;
   padding-right: 0px;
 }
@@ -614,7 +614,7 @@
   margin-top: -8px;
 }
 .tabs-title {
-  font-size: 12px;
+  font-size: 18px;
 }
 .tabs-closable {
   padding-right: 8px;
@@ -853,7 +853,7 @@
   vertical-align: top;
   width: auto;
   line-height: 24px;
-  font-size: 12px;
+  font-size: 18px;
   padding: 0;
   margin: 0 4px;
 }
@@ -1116,13 +1116,13 @@
   overflow: hidden;
   height: 18px;
   line-height: 18px;
-  font-size: 12px;
+  font-size: 18px;
 }
 .datagrid-header .datagrid-cell {
   height: auto;
 }
 .datagrid-header .datagrid-cell span {
-  font-size: 12px;
+  font-size: 18px;
 }
 .datagrid-cell-group {
   text-align: center;
@@ -1344,10 +1344,10 @@
   padding: 0;
   height: 30px;
   line-height: 30px;
-  font-size: 12px;
+  font-size: 18px;
 }
 .pagination span {
-  font-size: 12px;
+  font-size: 18px;
 }
 .pagination-link .l-btn-text {
   width: 24px;
@@ -1385,13 +1385,13 @@
 .calendar table {
   table-layout: fixed;
   border-collapse: separate;
-  font-size: 12px;
+  font-size: 18px;
   width: 100%;
   height: 100%;
 }
 .calendar table td,
 .calendar table th {
-  font-size: 12px;
+  font-size: 18px;
 }
 .calendar-noborder {
   border: 0;
@@ -1411,7 +1411,7 @@
   padding: 0 3px;
   height: 18px;
   line-height: 18px;
-  font-size: 12px;
+  font-size: 18px;
   cursor: pointer;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
@@ -1479,7 +1479,7 @@
   width: 180px;
   height: 150px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 18px;
   display: none;
   overflow: hidden;
 }
@@ -1495,7 +1495,7 @@
   margin: 0;
   padding: 2px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
 }
 .calendar-menu-prev,
 .calendar-menu-next {
@@ -1582,7 +1582,7 @@
   text-align: center;
 }
 .datebox-button a {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   opacity: 0.6;
@@ -1626,7 +1626,7 @@
   vertical-align: middle;
 }
 .spinner .spinner-text {
-  font-size: 12px;
+  font-size: 18px;
   border: 0px;
   line-height: 20px;
   height: 20px;
@@ -1700,7 +1700,7 @@
 }
 .progressbar-text {
   color: #fff;
-  font-size: 12px;
+  font-size: 18px;
 }
 .progressbar-value .progressbar-text {
   background-color: #0052A3;
@@ -1717,7 +1717,7 @@
   vertical-align: middle;
 }
 .searchbox .searchbox-text {
-  font-size: 12px;
+  font-size: 18px;
   border: 0;
   margin: 0;
   padding: 0 2px;
@@ -1725,7 +1725,7 @@
   vertical-align: top;
 }
 .searchbox .searchbox-prompt {
-  font-size: 12px;
+  font-size: 18px;
   color: #ccc;
 }
 .searchbox-button {
@@ -1812,7 +1812,7 @@
   position: absolute;
   display: inline-block;
   line-height: 12px;
-  font-size: 12px;
+  font-size: 18px;
   white-space: nowrap;
   top: -22px;
 }
@@ -1835,7 +1835,7 @@
 .slider-rulelabel span {
   position: absolute;
   display: inline-block;
-  font-size: 12px;
+  font-size: 18px;
 }
 .slider-v .slider-inner {
   width: 6px;
@@ -1944,7 +1944,7 @@
 }
 .menu-text,
 .menu-text span {
-  font-size: 12px;
+  font-size: 18px;
 }
 .menu-shadow {
   position: absolute;
@@ -2228,7 +2228,7 @@
   background: url('images/tree_icons.png') no-repeat -240px -18px;
 }
 .tree-title {
-  font-size: 12px;
+  font-size: 18px;
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
@@ -2238,7 +2238,7 @@
   line-height: 18px;
 }
 .tree-node-proxy {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 20px;
   padding: 0 2px 0 20px;
   border-width: 1px;
@@ -2271,7 +2271,7 @@
 }
 .tree-editor {
   border: 1px solid #ccc;
-  font-size: 12px;
+  font-size: 18px;
   height: 14px !important;
   height: 18px;
   line-height: 14px;
@@ -2317,7 +2317,7 @@
   border-radius: 5px 5px 5px 5px;
 }
 .tooltip-content {
-  font-size: 12px;
+  font-size: 18px;
 }
 .tooltip-arrow-outer,
 .tooltip-arrow {

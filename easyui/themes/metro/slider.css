@@ -29,7 +29,7 @@
   position: absolute;
   display: inline-block;
   line-height: 12px;
-  font-size: 12px;
+  font-size: 18px;
   white-space: nowrap;
   top: -22px;
 }
@@ -52,7 +52,7 @@
 .slider-rulelabel span {
   position: absolute;
   display: inline-block;
-  font-size: 12px;
+  font-size: 18px;
 }
 .slider-v .slider-inner {
   width: 6px;
