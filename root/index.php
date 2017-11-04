@@ -36,13 +36,14 @@
 			{
 				case 11:
 					if2.location = "../context/context11.php";
-
+					
 					break;
 				case 12:
 					if2.location = "../context/context12.php";
 					break;
 				case 13:
-					if2.location = "../context/context13.php?"+v2;
+					//if2.location = "../context/context13.php?"+v2;
+					if2.location = "../context/context13.html";
 					break;					
 			}
 		}		
