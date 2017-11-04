@@ -1,5 +1,16 @@
-[Sat Nov 04 15:23:18.446726 2017] [mpm_winnt:notice] [pid 1364:tid 772] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Sat Nov 04 15:23:18.446726 2017] [mpm_winnt:notice] [pid 1364:tid 772] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Sat Nov 04 15:23:18.446726 2017] [core:notice] [pid 1364:tid 772] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
-[Sat Nov 04 15:23:18.446726 2017] [mpm_winnt:notice] [pid 1364:tid 772] AH00418: Parent: Created child process 12652
-[Sat Nov 04 15:23:18.837416 2017] [mpm_winnt:notice] [pid 12652:tid 756] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 04 21:36:17.424130 2017] [mpm_winnt:notice] [pid 2644:tid 760] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Sat Nov 04 21:36:17.424130 2017] [mpm_winnt:notice] [pid 2644:tid 760] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Sat Nov 04 21:36:17.424130 2017] [core:notice] [pid 2644:tid 760] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
+[Sat Nov 04 21:36:17.424130 2017] [mpm_winnt:notice] [pid 2644:tid 760] AH00418: Parent: Created child process 7476
+[Sat Nov 04 21:36:17.893148 2017] [mpm_winnt:notice] [pid 7476:tid 756] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 04 21:56:46.663181 2017] [:error] [pid 7476:tid 1296] [client ::1:63228] PHP Fatal error:  Cannot use object of type stdClass as array in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 10, referer: http://localhost:8080/context/php_combobox.html?a=1
+[Sat Nov 04 21:57:17.434265 2017] [:error] [pid 7476:tid 1284] [client ::1:63235] PHP Fatal error:  Cannot use object of type stdClass as array in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 10, referer: http://localhost:8080/context/php_combobox.html
+[Sat Nov 04 21:57:42.318127 2017] [:error] [pid 7476:tid 1296] [client ::1:63243] PHP Notice:  Undefined index: value in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 2
+[Sat Nov 04 21:57:42.321135 2017] [:error] [pid 7476:tid 1296] [client ::1:63243] PHP Fatal error:  Cannot use object of type stdClass as array in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 10
+[Sat Nov 04 21:58:37.425317 2017] [:error] [pid 7476:tid 1284] [client ::1:63251] PHP Fatal error:  Cannot use object of type stdClass as array in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 10
+[Sat Nov 04 21:59:47.264589 2017] [:error] [pid 7476:tid 1296] [client ::1:63257] PHP Fatal error:  Cannot use object of type stdClass as array in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 10
+[Sat Nov 04 22:04:51.489268 2017] [:error] [pid 7476:tid 1292] [client ::1:63264] PHP Parse error:  syntax error, unexpected ',' in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 22
+[Sat Nov 04 22:05:17.439619 2017] [:error] [pid 7476:tid 1288] [client ::1:63271] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, array given in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 15
+[Sat Nov 04 22:05:17.440621 2017] [:error] [pid 7476:tid 1288] [client ::1:63271] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, array given in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 15
+[Sat Nov 04 22:05:17.440621 2017] [:error] [pid 7476:tid 1288] [client ::1:63271] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, array given in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 15
+[Sat Nov 04 22:05:17.440621 2017] [:error] [pid 7476:tid 1288] [client ::1:63271] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, array given in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 15
