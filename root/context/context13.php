@@ -29,9 +29,14 @@
 		</thead>
 	</table>
 	<div id="toolbar">
+		<br>
+		<span style="font-size:18px">關鍵字:</span>
+		<input id="keywords" style="font-size:18px;line-height:26px;border:1px solid #ccc">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-search" plain="true" onclick="doSearch()">搜尋</a>		
 		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">人員新增</a>
 		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">人員編修</a>
 		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">人員刪除</a>
+		<br><br>
 	</div>
 	
 	<div id="dlg" class="easyui-dialog" style="width:400px;height:350px;padding:10px 20px"
@@ -122,6 +127,11 @@
 				});
 			}
 		}
+		function doSearch(){
+			$('#dg').datagrid('load',{
+				keywords: $('#keywords').val()
+			});
+		}		
 	</script>
 	<style type="text/css">
 		#fm{

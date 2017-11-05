@@ -96,7 +96,7 @@
 				<table border="0" cellpadding="0" cellspacing="0" id="footer_text">
 					<tr>
 						<td width="552">
-							<p>│<a href="aboutus.html">關於 jash 進銷存</a>│<a href="webindex.html">網站地圖</a>│<a href="privacy.html">隱私權保護</a>│客服專線：0800-888-999</p>
+							<p>│<a href="aboutus.html">關於 jash's Web System</a>│<a href="webindex.html">網站地圖</a>│<a href="privacy.html">隱私權保護</a>│客服專線：0800-888-999</p>
 						</td>
 						<td width="348">
 							<h5>COPYRIGHT &copy; FOL. ALL RIGHTS RESERVED</h5>
