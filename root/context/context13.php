@@ -34,7 +34,7 @@
 		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">人員刪除</a>
 	</div>
 	
-	<div id="dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
+	<div id="dlg" class="easyui-dialog" style="width:400px;height:350px;padding:10px 20px"
 			closed="true" buttons="#dlg-buttons">
 		<div class="ftitle">人員資料</div>
 		<form id="fm" method="post" novalidate>
@@ -52,14 +52,14 @@
 				<!--<input name="email" class="easyui-textbox" validType="email">-->
 			</div>
 			<div class="fitem">
-				<label>部門名稱:</label>
+				<label>部門:</label>
 				<!--<input name="deo_id" class="easyui-textbox">-->
-				<input name="dep_id" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_dep_comb.php?value='.'0'.'\'"';?>>
+				<input name="dep_id" style="width:165px" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_dep_comb.php?value='.'0'.'\'"';?>>
 			</div>
 			
 			<div class="fitem">
 				<label>職稱:</label>
-				<input name="jt_id" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_jt_comb.php?value='.'0'.'\'"';?>>
+				<input name="jt_id" style="width:165px" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_jt_comb.php?value='.'0'.'\'"';?>>
 				
 			</div>			
 		</form>
@@ -73,14 +73,14 @@
 		function newUser(){
 			$('#dlg').dialog('open').dialog('setTitle','人員新增');
 			$('#fm').form('clear');
-			url = 'save_user.php';
+			url = '../lib/save_user.php';
 		}
 		function editUser(){
 			var row = $('#dg').datagrid('getSelected');
 			if (row){
 				$('#dlg').dialog('open').dialog('setTitle','人員修改');
 				$('#fm').form('load',row);
-				url = 'update_user.php?id='+row.id;
+				url = '../lib/update_user.php?id='+row.id;
 			}
 		}
 		function saveUser(){
@@ -106,9 +106,9 @@
 		function destroyUser(){
 			var row = $('#dg').datagrid('getSelected');
 			if (row){
-				$.messager.confirm('Confirm','Are you sure you want to destroy this user?',function(r){
+				$.messager.confirm('刪除資料確認','你確定要刪除該筆人員資料?',function(r){
 					if (r){
-						$.post('destroy_user.php',{id:row.id},function(result){
+						$.post('../lib/destroy_user.php',{id:row.id},function(result){
 							if (result.success){
 								$('#dg').datagrid('reload');	// reload the user data
 							} else {
@@ -129,7 +129,7 @@
 			padding:10px 30px;
 		}
 		.ftitle{
-			font-size:14px;
+			font-size:20px;
 			font-weight:bold;
 			padding:5px 0;
 			margin-bottom:10px;
@@ -139,10 +139,12 @@
 			margin-bottom:5px;
 		}
 		.fitem label{
+			font-size:18px;
 			display:inline-block;
 			width:80px;
 		}
 		.fitem input{
+			font-size:18px;
 			width:160px;
 		}
 	</style>

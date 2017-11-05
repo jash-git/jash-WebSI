@@ -1,8 +1,18 @@
-[Sun Nov 05 08:58:15.942479 2017] [mpm_winnt:notice] [pid 8428:tid 804] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Sun Nov 05 08:58:15.942479 2017] [mpm_winnt:notice] [pid 8428:tid 804] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Sun Nov 05 08:58:15.942479 2017] [core:notice] [pid 8428:tid 804] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
-[Sun Nov 05 08:58:15.957987 2017] [mpm_winnt:notice] [pid 8428:tid 804] AH00418: Parent: Created child process 12520
-[Sun Nov 05 08:58:16.426771 2017] [mpm_winnt:notice] [pid 12520:tid 756] AH00354: Child: Starting 64 worker threads.
-[Sun Nov 05 09:44:13.738563 2017] [:error] [pid 12520:tid 1284] [client ::1:64862] PHP Notice:  Undefined index: value in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_dep_comb.php on line 2, referer: http://localhost:8080/context/context13.php
-[Sun Nov 05 10:09:43.625987 2017] [:error] [pid 12520:tid 1284] [client ::1:50673] script 'C:/Users/jash/Desktop/jash-WebSI/root/login.php' not found or unable to stat, referer: http://localhost:8080/
-[Sun Nov 05 10:09:47.100429 2017] [:error] [pid 12520:tid 1284] [client ::1:50673] script 'C:/Users/jash/Desktop/jash-WebSI/root/login.php' not found or unable to stat, referer: http://localhost:8080/
+[Sun Nov 05 14:30:37.204275 2017] [mpm_winnt:notice] [pid 12444:tid 760] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Sun Nov 05 14:30:37.204275 2017] [mpm_winnt:notice] [pid 12444:tid 760] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Sun Nov 05 14:30:37.204275 2017] [core:notice] [pid 12444:tid 760] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
+[Sun Nov 05 14:30:37.220032 2017] [mpm_winnt:notice] [pid 12444:tid 760] AH00418: Parent: Created child process 7128
+[Sun Nov 05 14:30:37.798222 2017] [mpm_winnt:notice] [pid 7128:tid 756] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 05 14:34:10.769563 2017] [:error] [pid 7128:tid 1288] [client ::1:55258] script 'C:/Users/jash/Desktop/jash-WebSI/root/context/destroy_user.php' not found or unable to stat, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 14:35:35.632713 2017] [:error] [pid 7128:tid 1288] [client ::1:55262] script 'C:/Users/jash/Desktop/jash-WebSI/root/context/destroy_user.php' not found or unable to stat, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:46.148186 2017] [:error] [pid 7128:tid 1284] [client ::1:55394] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:47.202026 2017] [:error] [pid 7128:tid 1284] [client ::1:55394] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:47.594790 2017] [:error] [pid 7128:tid 1284] [client ::1:55394] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:47.841346 2017] [:error] [pid 7128:tid 1284] [client ::1:55394] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:48.060791 2017] [:error] [pid 7128:tid 1284] [client ::1:55394] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:54.403024 2017] [:error] [pid 7128:tid 1284] [client ::1:55400] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:55.187392 2017] [:error] [pid 7128:tid 1284] [client ::1:55400] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:55.371778 2017] [:error] [pid 7128:tid 1284] [client ::1:55400] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:00:55.570594 2017] [:error] [pid 7128:tid 1284] [client ::1:55400] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:04:18.219945 2017] [:error] [pid 7128:tid 1280] [client ::1:55443] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
+[Sun Nov 05 15:05:20.659554 2017] [:error] [pid 7128:tid 1280] [client ::1:55466] PHP Notice:  Undefined index: jt_id  in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\update_user.php on line 8, referer: http://localhost:8080/context/context13.php
