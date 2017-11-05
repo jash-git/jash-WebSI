@@ -10,7 +10,7 @@
 	$row = mysql_fetch_row($rs);
 	$result["total"] = $row[0];//紀錄總筆數
 	
-	$rs = mysql_query("SELECT * FROM user LIMIT $offset,$rows");//查詢該頁顯示資料
+	$rs = mysql_query("SELECT u.id AS id, u.name AS name, u.account AS account, u.password AS password, d.name AS dname, u.dep_id AS dep_id, jt.name AS jtname, u.jt_id AS jt_id FROM user AS u, department AS d, job_title AS jt WHERE (d.id=u.dep_id) AND (u.jt_id=jt.id) LIMIT $offset,$rows");//查詢該頁顯示資料
 	
 	$items = array();//宣告空陣列
 	while($row = mysql_fetch_object($rs)){//取出每一列的值

@@ -1,143 +1,150 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!-- InstanceBeginEditable name="doctitle" -->
-		<title>left-menu</title>
-		<!-- InstanceEndEditable -->
-		<link href="../css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="../css/menu.css" rel="stylesheet" type="text/css" media="screen" />
-		
-		<!-- InstanceBeginEditable name="head" -->
-		<style type="text/css">
-		#news_form table tr td h3 {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 1em;
-			color: #000000;
-			text-align: center;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-		#news_form table tr td h4 {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 0.9em;
-			color: #670167;
-			text-align: center;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-		#news_form #news_table {
-			border-top-width: 1px;
-			border-top-style: dotted;
-			border-top-color: #000000;
-			border-right-width: 1px;
-			border-right-style: dotted;
-			border-right-color: #000000;
-		}
-		#news_form #news_table tr td {
-			border-bottom-width: 1px;
-			border-left-width: 1px;
-			border-bottom-style: dotted;
-			border-left-style: dotted;
-			border-bottom-color: #000000;
-			border-left-color: #000000;
-		}
-		#news_form #news_table tr td h5 {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 0.9em;
-			color: #A336A3;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			margin-left: 5px;
-		}
-		.totalnum {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 0.8em;
-			color: #000000;
-			float: right;
-		}
-		#newslist_tab {
-			margin-right: auto;
-			margin-left: auto;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			border-top-width: 1px;
-			border-right-width: 1px;
-			border-bottom-width: 1px;
-			border-left-width: 1px;
-			border-top-style: dotted;
-			border-right-style: dotted;
-			border-top-color: #000000;
-			border-right-color: #000000;
-			border-bottom-color: #000000;
-			border-left-color: #000000;
-		}
-		#newslist_tab tr td {
-			border-top-width: 1px;
-			border-right-width: 1px;
-			border-bottom-width: 1px;
-			border-left-width: 1px;
-			border-bottom-style: dotted;
-			border-left-style: dotted;
-			border-top-color: #000000;
-			border-right-color: #000000;
-			border-bottom-color: #000000;
-			border-left-color: #000000;
-		}
-		#newslist_tab tr td h3 {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 1.1em;
-			text-align: center;
-			margin: 10px;
-			color: #000000;
-		}
-		#newslist_tab tr td h4 {
-			font-family: "新細明體", "Times New Roman";
-			font-size: 1.1em;
-			text-align: center;
-			margin: 5px;
-			color: #000000;
-		}
-		#newslist_tab tr td p {
-			/*功能說明*/
-			font-family: "新細明體", "Times New Roman";
-			font-size: 1.1em;
-			color: #000000;
-			text-align: left;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			margin-left: 5px;
-		}
-		.iconsimg {
-			margin-right: auto;
-			margin-left: auto;
-			margin-top: 2px;
-			margin-bottom: 2px;
-			border-top-style: none;
-			border-right-style: none;
-			border-bottom-style: none;
-			border-left-style: none;
-			text-align: center;
-		}
-		#newslist_form {
-			width: 600px;
-			margin-top: 20px;
-			margin-right: auto;
-			margin-bottom: 20px;
-			margin-left: auto;
-		}
-		</style>
-		<!-- InstanceEndEditable -->
-	</head>
-	<body>
-		<?php
-		
-		?>	
-		<table border="0" cellpadding="0" cellspacing="0" id="newslist_tab" width="1290px";><!--width="1305px"就是工作區的最大限度從[ #wrapper #content #right  #if2 ]這裡來的 -->
+<head>
+	<meta charset="UTF-8">
+	<title>Basic CRUD Application - jQuery EasyUI CRUD Demo</title>
+	
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/color.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/demo/demo.css">
+	
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../easyui/locale/easyui-lang-zh_CN.js" ></script>
+</head>
+<body>	
+	<table id="dg" title="人員列表" class="easyui-datagrid" style="width:1270px;height:975px"
+			url="../lib/get_user.php"
+			toolbar="#toolbar" pagination="true"
+			rownumbers="true" fitColumns="true" singleSelect="true">
+		<thead>
 			<tr>
-				<td>
-					<h3>人員資料管理:</h3>
-				</td>
-			</tr>						
-		</table>	
-	</body>
-</html>	
+				<th field="name" width="50">姓名</th><!--利用field屬性達到map SQL欄位-->
+				<th field="account" width="50">帳號</th>
+				<th field="password" width="50">密碼</th>
+				<th field="dname" width="50">部門名稱</th>
+				<th field="jtname" width="50">職稱名稱</th>
+			</tr>
+		</thead>
+	</table>
+	<div id="toolbar">
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">人員新增</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">人員編修</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">人員刪除</a>
+	</div>
+	
+	<div id="dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
+			closed="true" buttons="#dlg-buttons">
+		<div class="ftitle">人員資料</div>
+		<form id="fm" method="post" novalidate>
+			<div class="fitem">
+				<label>姓名:</label>
+				<input name="name" class="easyui-textbox" required="true">
+			</div>
+			<div class="fitem">
+				<label>帳號:</label>
+				<input name="account" class="easyui-textbox" required="true">
+			</div>
+			<div class="fitem">
+				<label>密碼:</label>
+				<input name="password" class="easyui-textbox" required="true">
+				<!--<input name="email" class="easyui-textbox" validType="email">-->
+			</div>
+			<div class="fitem">
+				<label>部門名稱:</label>
+				<!--<input name="deo_id" class="easyui-textbox">-->
+				<input name="dep_id" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_dep_comb.php?value='.'0'.'\'"';?>>
+			</div>
+			
+			<div class="fitem">
+				<label>職稱:</label>
+				<input name="jt_id" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_jt_comb.php?value='.'0'.'\'"';?>>
+				
+			</div>			
+		</form>
+	</div>
+	<div id="dlg-buttons">
+		<a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveUser()" style="width:90px">儲存</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')" style="width:90px">取消</a>
+	</div>
+	<script type="text/javascript">
+		var url;
+		function newUser(){
+			$('#dlg').dialog('open').dialog('setTitle','人員新增');
+			$('#fm').form('clear');
+			url = 'save_user.php';
+		}
+		function editUser(){
+			var row = $('#dg').datagrid('getSelected');
+			if (row){
+				$('#dlg').dialog('open').dialog('setTitle','人員修改');
+				$('#fm').form('load',row);
+				url = 'update_user.php?id='+row.id;
+			}
+		}
+		function saveUser(){
+			$('#fm').form('submit',{
+				url: url,
+				onSubmit: function(){
+					return $(this).form('validate');
+				},
+				success: function(result){
+					var result = eval('('+result+')');
+					if (result.errorMsg){
+						$.messager.show({
+							title: 'Error',
+							msg: result.errorMsg
+						});
+					} else {
+						$('#dlg').dialog('close');		// close the dialog
+						$('#dg').datagrid('reload');	// reload the user data
+					}
+				}
+			});
+		}
+		function destroyUser(){
+			var row = $('#dg').datagrid('getSelected');
+			if (row){
+				$.messager.confirm('Confirm','Are you sure you want to destroy this user?',function(r){
+					if (r){
+						$.post('destroy_user.php',{id:row.id},function(result){
+							if (result.success){
+								$('#dg').datagrid('reload');	// reload the user data
+							} else {
+								$.messager.show({	// show error message
+									title: 'Error',
+									msg: result.errorMsg
+								});
+							}
+						},'json');
+					}
+				});
+			}
+		}
+	</script>
+	<style type="text/css">
+		#fm{
+			margin:0;
+			padding:10px 30px;
+		}
+		.ftitle{
+			font-size:14px;
+			font-weight:bold;
+			padding:5px 0;
+			margin-bottom:10px;
+			border-bottom:1px solid #ccc;
+		}
+		.fitem{
+			margin-bottom:5px;
+		}
+		.fitem label{
+			display:inline-block;
+			width:80px;
+		}
+		.fitem input{
+			width:160px;
+		}
+	</style>
+</body>
+</html>
