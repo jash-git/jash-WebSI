@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Basic CRUD Application - jQuery EasyUI CRUD Demo</title>
+	<title>context13</title>
 	
 	<link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
@@ -20,11 +20,13 @@
 			rownumbers="true" fitColumns="true" singleSelect="true">
 		<thead>
 			<tr>
-				<th field="name" width="50">姓名</th><!--利用field屬性達到map SQL欄位-->
-				<th field="account" width="50">帳號</th>
-				<th field="password" width="50">密碼</th>
-				<th field="dname" width="50">部門名稱</th>
-				<th field="jtname" width="50">職稱名稱</th>
+				<th field="job_number" width="13">工號</th>
+				<th field="name" width="15">姓名</th><!--利用field屬性達到map SQL欄位-->
+				<th field="sname" width="10">性別</th>
+				<th field="birthday" width="17">生日</th>
+				<th field="account" width="30">帳號</th>
+				<th field="dname" width="20">部門名稱</th>
+				<th field="jtname" width="20">職稱名稱</th>
 			</tr>
 		</thead>
 	</table>
@@ -53,7 +55,8 @@
 			</div>
 			<div class="fitem">
 				<label>密碼:</label>
-				<input name="password" class="easyui-textbox" required="true">
+				<input name="password" class="easyui-passwordbox" prompt="Password" iconWidth="28">
+				<!--<input name="password" class="easyui-textbox" required="true">-->
 				<!--<input name="email" class="easyui-textbox" validType="email">-->
 			</div>
 			<div class="fitem">
