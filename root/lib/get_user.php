@@ -9,13 +9,13 @@
 	
 	$where = "u.name LIKE '%$keywords%' OR u.account LIKE '%$keywords%' OR d.name LIKE '%$keywords%' OR jt.name LIKE '%$keywords%'";
 	
-	$SQL="SELECT u.id AS id,u.job_number AS job_number, u.name AS name, u.account AS account, u.password AS password, u.sex AS sex, s.name AS sname, u.birthday AS birthday, u.identification AS identification, d.name AS dname, u.dep_id AS dep_id, jt.name AS jtname, u.jt_id AS jt_id FROM user AS u, department AS d, job_title AS jt, sex AS s WHERE (s.id=u.sex) AND (d.id=u.dep_id) AND (u.jt_id=jt.id) AND (".$where.")";
+	$SQL="SELECT u.id AS id,u.job_number AS job_number, u.name AS name, u.account AS account, u.password AS password, u.sex AS sex, s.name AS sname, u.birthday AS birthday, u.identification AS identification, d.name AS dname, u.dep_id AS dep_id, jt.name AS jtname, u.jt_id AS jt_id FROM user AS u, department AS d, job_title AS jt, sex AS s WHERE (s.id=u.sex) AND (d.id=u.dep_id) AND (u.jt_id=jt.id) AND (".$where.") ORDER BY u.id";
 	//echo $SQL."<br>";
 	
 	$rs = mysql_query($SQL);//查詢資料表總筆數
 	$result["total"] = mysql_num_rows($rs);//紀錄總筆數
 	
-	$SQL="SELECT u.id AS id,u.job_number AS job_number, u.name AS name, u.account AS account, u.password AS password, u.sex AS sex, s.name AS sname, u.birthday AS birthday, u.identification AS identification, d.name AS dname, u.dep_id AS dep_id, jt.name AS jtname, u.jt_id AS jt_id FROM user AS u, department AS d, job_title AS jt, sex AS s WHERE (s.id=u.sex) AND (d.id=u.dep_id) AND (u.jt_id=jt.id) AND (".$where.") LIMIT $offset,$rows";
+	$SQL="SELECT u.id AS id,u.job_number AS job_number, u.name AS name, u.account AS account, u.password AS password, u.sex AS sex, s.name AS sname, u.birthday AS birthday, u.identification AS identification, d.name AS dname, u.dep_id AS dep_id, jt.name AS jtname, u.jt_id AS jt_id FROM user AS u, department AS d, job_title AS jt, sex AS s WHERE (s.id=u.sex) AND (d.id=u.dep_id) AND (u.jt_id=jt.id) AND (".$where.") ORDER BY u.id LIMIT $offset,$rows";
 	//echo $SQL."<br>";
 	
 	$rs = mysql_query($SQL);//查詢該頁顯示資料

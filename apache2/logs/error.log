@@ -1,7 +1,5 @@
-[Tue Jan 09 20:32:51.401037 2018] [mpm_winnt:notice] [pid 10468:tid 772] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Tue Jan 09 20:32:51.401501 2018] [mpm_winnt:notice] [pid 10468:tid 772] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Tue Jan 09 20:32:51.401501 2018] [core:notice] [pid 10468:tid 772] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
-[Tue Jan 09 20:32:51.414536 2018] [mpm_winnt:notice] [pid 10468:tid 772] AH00418: Parent: Created child process 16620
-[Tue Jan 09 20:32:51.852378 2018] [mpm_winnt:notice] [pid 16620:tid 820] AH00354: Child: Starting 64 worker threads.
-[Tue Jan 09 20:53:42.535129 2018] [:error] [pid 16620:tid 1284] [client ::1:54421] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_job_title.php on line 16, referer: http://localhost:8080/context/context11.php
-[Tue Jan 09 20:53:42.538137 2018] [:error] [pid 16620:tid 1284] [client ::1:54421] PHP Warning:  mysql_fetch_object(): supplied argument is not a valid MySQL result resource in C:\\Users\\jash\\Desktop\\jash-WebSI\\root\\lib\\get_job_title.php on line 24, referer: http://localhost:8080/context/context11.php
+[Wed Jan 10 20:25:47.704379 2018] [mpm_winnt:notice] [pid 11160:tid 760] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Wed Jan 10 20:25:47.704880 2018] [mpm_winnt:notice] [pid 11160:tid 760] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Wed Jan 10 20:25:47.704880 2018] [core:notice] [pid 11160:tid 760] AH00094: Command line: 'C:\\Users\\jash\\Desktop\\jash-WebSI/apache2/bin/httpd_usbwv8.exe -d C:/Users/jash/Desktop/jash-WebSI/apache2'
+[Wed Jan 10 20:25:47.731958 2018] [mpm_winnt:notice] [pid 11160:tid 760] AH00418: Parent: Created child process 11844
+[Wed Jan 10 20:25:48.206715 2018] [mpm_winnt:notice] [pid 11844:tid 796] AH00354: Child: Starting 64 worker threads.

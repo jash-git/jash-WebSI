@@ -9,13 +9,13 @@
 	
 	$where = "jt.name LIKE '%$keywords%'";
 	
-	$SQL="SELECT jt.id AS id, jt.name AS name FROM job_title AS jt WHERE (".$where.")";
+	$SQL="SELECT jt.id AS id, jt.name AS name FROM job_title AS jt WHERE (".$where.") ORDER BY jt.id";
 	//echo $SQL."<br>";
 	
 	$rs = mysql_query($SQL);//查詢資料表總筆數
 	$result["total"] = mysql_num_rows($rs);//紀錄總筆數
 	
-	$SQL="SELECT jt.id AS id, jt.name AS name FROM job_title AS jt WHERE (".$where.") LIMIT $offset,$rows";
+	$SQL="SELECT jt.id AS id, jt.name AS name FROM job_title AS jt WHERE (".$where.") ORDER BY jt.id LIMIT $offset,$rows";
 	//echo $SQL."<br>";
 	
 	$rs = mysql_query($SQL);//查詢該頁顯示資料
