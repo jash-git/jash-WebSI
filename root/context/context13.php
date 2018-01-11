@@ -41,14 +41,27 @@
 		<br><br>
 	</div>
 	
-	<div id="dlg" class="easyui-dialog" style="width:400px;height:350px;padding:10px 20px"
+	<div id="dlg" class="easyui-dialog" style="width:400px;height:420px;padding:10px 20px"
 			closed="true" buttons="#dlg-buttons">
 		<div class="ftitle">人員資料</div>
 		<form id="fm" method="post" novalidate>
 			<div class="fitem">
+				<label>工號:</label>
+				<input name="job_number" class="easyui-textbox" required="true">
+			</div>		
+			<div class="fitem">
 				<label>姓名:</label>
 				<input name="name" class="easyui-textbox" required="true">
 			</div>
+			<div class="fitem">
+				<label>性別:</label>
+				<!--<input name="deo_id" class="easyui-textbox">-->
+				<input name="sex" style="width:165px" class="easyui-combobox" data-options=<?php echo '"valueField:\'id\',textField:\'name\',url:\'../lib/get_sex_comb.php?value='.'0'.'\'"';?>>
+			</div>
+			<div class="fitem">
+				<label>生日:</label>			
+				<input name="birthday" type="text" style="width:165px" class="easyui-datebox" required="required">
+			</div>	
 			<div class="fitem">
 				<label>帳號:</label>
 				<input name="account" class="easyui-textbox" required="true">
