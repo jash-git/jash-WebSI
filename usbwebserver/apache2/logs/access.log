@@ -1,0 +1,14 @@
+::1 - - [29/Jul/2020:15:26:45 +0800] "GET / HTTP/1.1" 200 3117
+::1 - - [29/Jul/2020:15:26:45 +0800] "GET /images/template_img/template_02.jpg HTTP/1.1" 404 233
+::1 - - [29/Jul/2020:15:26:45 +0800] "GET /images/template_img/template_04.jpg HTTP/1.1" 404 233
+::1 - - [29/Jul/2020:15:26:45 +0800] "GET /images/template_img/template_05.jpg HTTP/1.1" 404 233
+::1 - - [29/Jul/2020:15:26:45 +0800] "GET /context/context00.php HTTP/1.1" 200 3869
+::1 - - [29/Jul/2020:15:26:48 +0800] "GET /left-menu/base-menu.php HTTP/1.1" 200 2131
+::1 - - [29/Jul/2020:15:26:55 +0800] "GET /context/context12.php HTTP/1.1" 200 4692
+::1 - - [29/Jul/2020:15:26:55 +0800] "POST /lib/get_dep_comb.php?value=0 HTTP/1.1" 200 2
+::1 - - [29/Jul/2020:15:26:55 +0800] "POST /lib/get_department.php HTTP/1.1" 200 21
+::1 - - [29/Jul/2020:15:27:13 +0800] "POST /lib/save_department.php HTTP/1.1" 200 30
+::1 - - [29/Jul/2020:15:27:14 +0800] "POST /lib/get_department.php HTTP/1.1" 200 80
+::1 - - [29/Jul/2020:15:27:20 +0800] "GET /easyui/themes/default/images/messager_icons.png HTTP/1.1" 200 6116
+::1 - - [29/Jul/2020:15:27:21 +0800] "POST /lib/destroy_department.php HTTP/1.1" 200 16
+::1 - - [29/Jul/2020:15:27:21 +0800] "POST /lib/get_department.php HTTP/1.1" 200 21

@@ -1,0 +1,5 @@
+[Wed Jul 29 15:26:39.862653 2020] [mpm_winnt:notice] [pid 17896:tid 824] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Wed Jul 29 15:26:39.863651 2020] [mpm_winnt:notice] [pid 17896:tid 824] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Wed Jul 29 15:26:39.863651 2020] [core:notice] [pid 17896:tid 824] AH00094: Command line: 'C:\\Users\\jashliao\\Desktop\\jash-WebSI\\usbwebserver/apache2/bin/httpd_usbwv8.exe -d C:/Users/jashliao/Desktop/jash-WebSI/usbwebserver/apache2'
+[Wed Jul 29 15:26:39.865615 2020] [mpm_winnt:notice] [pid 17896:tid 824] AH00418: Parent: Created child process 11332
+[Wed Jul 29 15:26:40.386222 2020] [mpm_winnt:notice] [pid 11332:tid 840] AH00354: Child: Starting 64 worker threads.
